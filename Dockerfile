@@ -6,6 +6,6 @@ WORKDIR /usr/src
 
 # Copy any source file(s) required for the action
 COPY entrypoint.sh .
-
+chmod 755 entrypoint.sh
 # Configure the container to be run as an executable
 ENTRYPOINT ["/usr/src/entrypoint.sh"]
